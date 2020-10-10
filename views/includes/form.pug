@@ -1,0 +1,20 @@
+form.col.s12(action='/', method='post')
+  .row
+    .input-field.col.s12
+      i.material-icons.prefix account_circle
+      input#first_name.validate(name='first_name', type='text')
+      label(for='first_name') First Name
+    .input-field.col.s12
+      i.material-icons.prefix account_box
+      input#last_name.validate(name='last_name', type='text')
+      label(for='last_name') Last Name
+  .row
+    .input-field.col.s12
+      i.material-icons.prefix phone
+      input#phone.validate(name='phone', type='tel')
+      label(for='phone') Phone
+    .input-field.col.s12
+      i.material-icons.prefix mail
+      input#email.validate(name='email', type='email')
+      label(for='email') Email
+  button.btn.waves-effect.waves-light(type='submit') Submit

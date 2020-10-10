@@ -1,0 +1,106 @@
+extends layout
+
+block content
+
+  .row.center
+        
+        .col.s12.m8.offset-m2
+          h3= `${title}`
+          .row
+
+            .navtab-layout
+              .row.z-depth-5
+                .content__inner
+                  
+                  //tabs
+                  nav.nav-extended.teal
+                    
+                    .nav-wrapper
+                      a.brand-logo.center(href='https://docs.google.com/spreadsheets/d/12_6JeFDKeHHybI9GwPnPTxvmKNs5DBOZ29hQzsPIYf0/edit#gid=152787366' target='_blank')  Starter
+                      
+                    //tabs navigation
+                    .nav-content.tabs__nav
+
+                      ul.tabs.tabs-fixed-width.tabs-transparent.tabs__nav-list
+                        
+                        li.tab
+                          a(href='#tab1') Tab1
+                        li.tab
+                          a(href='#tab2') Tab2
+                        li.tab
+                          a(href='#tab3') Tab3
+                        
+                    
+                  .tabs__panels
+                    
+
+                    .tabs__panel.col.s12#tab1
+                      
+                      .row
+                        .col.s12
+                          .row#gsheet-starter
+                            include includes/form.pug
+
+                    .tabs__panel.col.s12#tab2
+                      
+                      ul.collection
+                        li.collection-item.avatar
+                          img.circle(src='https://fakeimg.pl/50/' alt='')
+                          span.title Title
+                          p
+                            | First Line 
+                            br
+                            |          Second Line
+                          a.secondary-content(href='#!')
+                            i.material-icons grade
+                        li.collection-item.avatar
+                          i.material-icons.circle folder
+                          span.title Title
+                          p
+                            | First Line 
+                            br
+                            |          Second Line
+                          a.secondary-content(href='#!')
+                            i.material-icons grade
+                        li.collection-item.avatar
+                          i.material-icons.circle.green insert_chart
+                          span.title Title
+                          p
+                            | First Line 
+                            br
+                            |          Second Line
+                          a.secondary-content(href='#!')
+                            i.material-icons grade
+                        li.collection-item.avatar
+                          i.material-icons.circle.red play_arrow
+                          span.title Title
+                          p
+                            | First Line 
+                            br
+                            |          Second Line
+                          a.secondary-content(href='#!')
+                            i.material-icons grade
+      
+                        
+                      
+                    .tabs__panel.col.s12#tab3
+                      
+                      ul.collapsible
+                        li
+                          .collapsible-header
+                            i.material-icons filter_drama
+                            | First
+                          .collapsible-body
+                            span Lorem ipsum dolor sit amet.
+                        li
+                          .collapsible-header
+                            i.material-icons place
+                            | Second
+                          .collapsible-body
+                            span Lorem ipsum dolor sit amet.
+                        li
+                          .collapsible-header
+                            i.material-icons whatshot
+                            | Third
+                          .collapsible-body
+                            span Lorem ipsum dolor sit amet.

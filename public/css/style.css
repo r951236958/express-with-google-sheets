@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+  /* resetting the box model for all elements */
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.elements-promo {
+  margin-bottom: 52px;
+  margin-top: 60px;
+  background-color: #f93d66;
+  background: linear-gradient(145deg, #4772d9, #5be0e0);
+  border-radius: 4px;
+}
+
+/* https://icomoon.io/ */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/*
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+*/
+svg:not(:root).icon-inline--fa {
+  overflow: visible;
+}
+
+svg.svg {
+  display: none;
+}
+
+svg.icon {
+  font-size: 1.3rem;
+  line-height: inherit;
+}
+
+/* .svg-inline--fa */
+.icon-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+/* .fa-fw */
+.icon-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+/* .svg-inline--fa.fa-fw */
+.icon-inline--fa.icon-fw {
+  width: 1.25em;
+}
+
+.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.icon.codepen {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  height: 26px;
+  width: 138px;
+}
+
+.icon-jsfiddle {
+  width: 1.142578125em;
+}
+
+.icon-google-spreadsheet {
+  color: #0F9D58;
+}
+
+/* CSS 屬性選擇器 */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+div[class$="test"] {
+  margin: 16px 0px;
+}
+
+svg[class$="32"] {
+  width: 32px;
+  height: 32px;
+}
+
+svg[class$="400"] {
+  width: 400px;
+  height: 400px;
+}
+
+:root {
+  --balloon-border-radius: 4px;
+  --balloon-font-size: 0.8rem;
+  --balloon-color: rgba(16, 16, 16, 0.95);
+  --balloon-move: 30px;
+}
+
+.tooltiop-balloon-lg {
+  --balloon-font-size: 1.2rem;
+}

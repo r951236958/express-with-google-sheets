@@ -1,0 +1,17 @@
+doctype html
+html(lang='zh-TW')
+  include includes/head.pug
+
+  body
+
+    include includes/header.pug
+
+    main
+      div.container
+        block content
+
+    include includes/footer.pug
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js' integrity='sha512-7XdqOa4bqU/hqbUuS8epr0ECSj9laLWnualyqow2TQ3RJ+TUoac0yKNjEtgg3gHGEbM+Jbwgo6K/+Y/0mJHOfA==' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='/js/script.js')
